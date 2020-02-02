@@ -1,0 +1,14 @@
+.nav-asistencia{
+   
+    display: inline-block;
+    background: salmon;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    
+
+}
+
+.nav-asistencia:hover{
+    background: rosybrown;
+}
