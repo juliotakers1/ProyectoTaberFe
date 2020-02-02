@@ -215,10 +215,7 @@ Eliminar
 		<label for="">Cantidad</label>
         <input type="number" name="cantidad" id="cantidad"  class="form-control" id="">
 		<br>
-		<?php
-		date_default_timezone_set('America/Mexico_City');
-		$fecha_actual=date("U-m-d H:i:s");
-		?>
+		
 		<label for="">Periodo</label>
      <select name="periodo" id="periodo">
      <option value="Primero">Primero</option>
