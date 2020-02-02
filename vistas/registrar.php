@@ -18,6 +18,6 @@ if($sentencia->execute()){
 }
 else{
     return "error";
-}
+} 
 
 ?>
