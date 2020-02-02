@@ -106,8 +106,8 @@ Nueva Reservación
     <th scope="col">Apellido Docente</th>
 	<th scope="col">Marca Tablet</th>
 	<th scope="col">Cantidad</th>
-	<th scope="col">Fecha Inicio</th>
-	<th scope="col">Fecha Fin</th>
+	<th scope="col">Periodo</th>
+	
     
     <th scope="col">Eliminar</th>
     
