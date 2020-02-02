@@ -32,6 +32,5 @@ if(isset($_SESSION['user'])){
     include_once 'vistas/login.php';
 }
 
-session_unset();
-session_destroy();
+
 ?>

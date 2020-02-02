@@ -1,12 +1,15 @@
 <?php
 
-    include_once 'user_session.php';
+    
 
-    $userSession = new UserSession();
-    $userSession->closeSession();
+  
+    session_start();
+    session_destroy();
+
     
 
 
     header("location: ../index.php");
+    exit();
 
 ?>

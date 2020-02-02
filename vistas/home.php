@@ -1,3 +1,15 @@
+
+<?php
+
+session_start();
+$usuario = $_SESSION['user'];
+
+if(!isset($usuario)){
+	header("Location: Login.php");
+}else{
+	<script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
+}
+	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,14 +29,7 @@
 		<!--<h1 class="">Colegio Cristiano Tabernáculo de la Fe</h1>-->
 	</section>
 	<nav class="navegacion">
-<?php
 
-	if($_SESSION['user']== null ){
-	header('Location: index.php');
-	session_unset();
-	session_destroy();
-	}
-		?>
 		<ul class="menu">
 
 			<!--<li class="first-item">
@@ -82,7 +87,7 @@
     </nav>
   
  
-  <script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
+  
 
   <section class="login-box"></section>
   <i class="fab fa-facebook-square"></i>
