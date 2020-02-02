@@ -219,13 +219,12 @@ Eliminar
 		date_default_timezone_set('America/Mexico_City');
 		$fecha_actual=date("U-m-d H:i:s");
 		?>
-		<label for="">Fecha Inicio</label>
-        <input type="datetime-local" value="yyyy-mm-dd" name="fechai"  id="fechai" class="form-control" id="">
-		<br>
-		<label for="">Fecha Fin</label>
-        <input type="datetime-local" name="fechaf"  value="yyyy-mm-dd" id="fechaf" class="form-control" id="">
-		<br>
-        <div class="modal-footer">
+		<label for="">Periodo</label>
+     <select name="periodo" id="periodo">
+     <option value="Primero">Primero</option>
+     </select>
+  	<br>
+		
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         <button type="submit" class="btn btn-primary">Guardar</button>
         </div>
