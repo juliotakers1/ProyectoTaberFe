@@ -139,7 +139,7 @@ Nueva Reservación
 	<td>'.$fila['APELLIDO_DOCENTE'].'</td>
     <td>'.$fila['MARCA_TABLET'].'</td>
     <td>'.$fila['CANTIDAD'].'</td>
-    <td>'.$fila['FECHA_INICIO'].'</td>
+    <td>'.$fila['PERIODO'].'</td>
     
     
 <td> <button type="button" class="btn btn-danger deletebtn" data-toggle="modal" data-target="#eliminar">
