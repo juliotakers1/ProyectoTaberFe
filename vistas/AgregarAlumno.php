@@ -1,12 +1,12 @@
 <?php
 
-session_start();
+
 $usuario = $_SESSION['user'];
 
 if(!isset($user)){
 	header("Location: Login.php");
 }else{
-	<script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
+	
 }
 	?>
 

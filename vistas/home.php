@@ -12,7 +12,7 @@
 	
 	<?php
 
-session_start();
+
 $usuario = $_SESSION['user'];
 
 if(!isset($usuario)){
