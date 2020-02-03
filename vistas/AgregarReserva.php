@@ -99,7 +99,7 @@ $suma = "SELECT SUM(CANTIDAD) FROM reservacion ";
 $sumato= 50-$suma;
 ?>
 
- <input type="text" disabled value="'.$sumato'">
+ <input type="text" disabled value="'.$sumato.'">
 <!--para disponibles es 50 que son las tablets totales menos la suma total de la columna-->
 
 
