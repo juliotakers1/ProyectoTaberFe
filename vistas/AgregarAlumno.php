@@ -4,7 +4,7 @@
 $usuario = $_SESSION['user'];
 
 if(!isset($user)){
-	header("Location: Login.php");
+	header("Location: ../index.php");
 }else{
 	
 }
