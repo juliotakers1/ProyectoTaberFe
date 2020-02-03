@@ -92,7 +92,9 @@ Nueva Reservación
 </button>
     <br>
     <br>
-<label for="">Disponibles</label>
+<label for="">Disponibles: </label>
+ 
+
 
     <!--boton agregar-->
 
