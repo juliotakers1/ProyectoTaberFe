@@ -213,7 +213,7 @@ Eliminar
         
         
 		<label for="">Cantidad</label>
-        <input type="number" name="cantidad" id="cantidad"  class="form-control" id="">
+        <input type="number" name="cantidad" id="cantidad"   id="">
 		
 		
 		<label for="">Periodo</label>
