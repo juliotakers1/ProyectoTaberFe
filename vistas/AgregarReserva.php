@@ -196,7 +196,7 @@ Eliminar
        
 		
         <label for="">Tablet</label>
-		<select name="codigot" id="codigot">
+		<select name="codigot" id="codigot" class="form-control">
 		   <?php
     include_once("../includes/conexion.php");
 
@@ -213,11 +213,11 @@ Eliminar
         
         
 		<label for="">Cantidad</label>
-        <input type="number" name="cantidad" id="cantidad"   id="">
+        <input type="number" name="cantidad" id="cantidad"  class="form-control" id="">
 		
 		
 		<label for="">Periodo</label>
-     <select name="periodo" id="periodo">
+     <select name="periodo" id="periodo" class="form-control">
      <option value="Primero">Primero</option>
      </select>
   	<br>
