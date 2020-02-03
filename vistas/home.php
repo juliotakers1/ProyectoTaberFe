@@ -1,15 +1,4 @@
 
-<?php
-
-session_start();
-$usuario = $_SESSION['user'];
-
-if(!isset($usuario)){
-	header("Location: Login.php");
-}else{
-	
-}
-	?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +10,17 @@ if(!isset($usuario)){
 	<link rel="stylesheet" href="./css/estilos1.css">
 	
 	
+	<?php
 
+session_start();
+$usuario = $_SESSION['user'];
+
+if(!isset($usuario)){
+	header("Location: Login.php");
+}else{
+	
+}
+	?>
 </head>
 <body>
 	<img src="../img/hogar.png" alt="">
