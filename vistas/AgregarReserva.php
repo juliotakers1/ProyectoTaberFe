@@ -214,7 +214,7 @@ Eliminar
         
 		<label for="">Cantidad</label>
         <input type="number" name="cantidad" id="cantidad"  class="form-control" id="">
-		<br>
+		
 		
 		<label for="">Periodo</label>
      <select name="periodo" id="periodo">
