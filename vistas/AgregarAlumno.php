@@ -1,14 +1,4 @@
-<?php
 
-
-$usuario = $_SESSION['user'];
-
-if(!isset($user)){
-	header("Location: ../index.php");
-}else{
-	
-}
-	?>
 
 <!DOCTYPE html>
 <html lang="en">
