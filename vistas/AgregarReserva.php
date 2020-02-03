@@ -95,11 +95,17 @@ Nueva Reservación
 <label for="">Disponibles: </label>
 
 <?php
-$suma = "SELECT SUM(CANTIDAD) FROM reservacion ";
-$sumato= 50-$suma;
+include_once("../includes/conexion.php");
+
+
+
+
+$suma = 'SELECT sum(CANTIDAD) FROM reservacion';
+$num2= 50;
+$resta = $num2-$suma;
 ?>
 
- <input type="text" disabled value="'.$sumato.'">
+ <input type="text" value=" <?php echo $resta ?>"  disabled >
 <!--para disponibles es 50 que son las tablets totales menos la suma total de la columna-->
 
 
