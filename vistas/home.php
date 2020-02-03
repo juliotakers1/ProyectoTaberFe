@@ -7,7 +7,7 @@ $usuario = $_SESSION['user'];
 if(!isset($usuario)){
 	header("Location: Login.php");
 }else{
-	<script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
+	
 }
 	?>
 <!DOCTYPE html>
@@ -87,7 +87,7 @@ if(!isset($usuario)){
     </nav>
   
  
-  
+	<script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
 
   <section class="login-box"></section>
   <i class="fab fa-facebook-square"></i>
