@@ -93,7 +93,7 @@ Nueva Reservación
     <br>
     <br>
 <label for="">Disponibles: </label>
- 
+ <input type="text" disabled>
 
 
     <!--boton agregar-->
