@@ -193,7 +193,7 @@ Eliminar
    
     ?>
 	</select>
-        <br>
+       
 		
         <label for="">Tablet</label>
 		<select name="codigot" id="codigot">
@@ -210,7 +210,7 @@ Eliminar
    
     ?>
 	</select>
-        <br>
+        
         
 		<label for="">Cantidad</label>
         <input type="number" name="cantidad" id="cantidad"  class="form-control" id="">
