@@ -179,7 +179,7 @@ Eliminar
        
    
            <label for="">Docente</label>
-        <select name="codigod" id="codigod">
+        <select name="codigod" id="codigod" class="form-control">
 		   <?php
     include_once("../includes/conexion.php");
 
