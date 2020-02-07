@@ -100,12 +100,22 @@ include_once("../includes/conexion.php");
 
 
 
-$suma = 'SELECT sum(CANTIDAD) FROM reservacion';
-$num2= 50;
-$resta = $num2-$suma;
+//$num1 = 'SELECT SUM(CANTIDAD)  as NUM1 FROM reservacion';
+//$num2 = 'SELECT SUM(CATIDAD_TABLET)  as NUM2 FROM tablets';
+//$resta = $num2 - $num1;
+$num2 = 50;
+$query="SELECT SUM(CANTIDAD)  as NUM1 FROM reservacion ";
+    $consulta=$base_de_datos->query($query);
+    while ($fila=$consulta->fetch(PDO::FETCH_ASSOC))
+    {
+      $resta = $num2 - $fila['NUM1'];
+      echo '
+      <input type="text" value="'.$resta.' "  disabled >
+      ';
+    }
 ?>
 
- <input type="text" value=" <?php echo $resta ?>"  disabled >
+ 
 <!--para disponibles es 50 que son las tablets totales menos la suma total de la columna-->
 
 
