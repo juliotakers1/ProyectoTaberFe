@@ -78,7 +78,7 @@
 		</ul>
     </nav>
   
-    <div class="container">
+    <div class="contaner1">
     <h1 class="text-center">Listado Asistencia</h1>
     <button type="button" class="btn btn-info " data-toggle="modal" onclick="location.href='../vistas/AgregarAsis.php'">
 Parvúlos Primaria

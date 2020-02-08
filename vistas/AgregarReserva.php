@@ -78,7 +78,7 @@
 		</ul>
     </nav>
   
-    <div class="container">
+    <div class="contaner1">
     <h1 class="text-center">Listado Reservaciones</h1>
     <button type="button" class="btn btn-info " data-toggle="modal" onclick="location.href='../vistas/AgregarDocente.php'">
 Docentes
@@ -245,6 +245,15 @@ Eliminar
 		<label for="">Periodo</label>
      <select name="periodo" id="periodo" class="form-control">
      <option value="Primero">Primero</option>
+     <option value="Segundo">Segundo</option>
+     <option value="Tercero">Tercero</option>
+     <option value="Cuarto">Cuarto</option>
+     <option value="Quinto">Quinto</option>
+     <option value="Sexto">Sexto</option>
+     <option value="Septimo">Septimo</option>
+     <option value="Octavo">Octavo</option>
+     <option value="Noveno">Noveno</option>
+     
      </select>
   	<br>
 		

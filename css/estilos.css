@@ -179,13 +179,13 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.51);
 	}
 
 	}
-	.container .btn{
+	.contaner1 .btn{
 		
 		display: inline;
 	}
 
 	@media (max-width: 794px){
-		.container .btn{
+		.contaner1 .btn{
 			
 			display: inline-block;
 			margin-top: 1rem;
