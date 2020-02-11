@@ -17,7 +17,8 @@
     
 </head>
 <body>
-
+<!--el container se puede poner aqui-->
+<div class="container">
 <section class="title mx-10">
 		<!--<h1 class="">Colegio Cristiano Tabernáculo de la Fe</h1>-->
 	</section>
@@ -78,7 +79,7 @@
 		</ul>
     </nav>
   
-    <div class="contaner1">
+   
     <h1 class="text-center">Listado Asistencia</h1>
     <button type="button" class="btn btn-info " data-toggle="modal" onclick="location.href='../vistas/AgregarAsis.php'">
 Parvúlos Primaria
@@ -256,20 +257,17 @@ Eliminar
     <option value="'.$fila['CODIGO_GRADO'].'">'.$fila['NOMBRE_GRADO'].'</option>
     </select>
    </td>
-    <td><select name="asistencia" id="asistencia">
-    <option value="si">Si</option>
-    <option value="no">No</option>
-    </select></td>
+    <td><input type="checkbox" name="asistencia" value="si"></td>
     
    
-    </tr>
+    </tr> 
     ';
     }
     
     ?>
    
     
-  
+ 
     
     </table>
         

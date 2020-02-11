@@ -17,7 +17,7 @@
     
 </head>
 <body>
-
+<div class="container">
 <section class="title mx-10">
 		<!--<h1 class="">Colegio Cristiano Tabernáculo de la Fe</h1>-->
 	</section>
@@ -78,7 +78,7 @@
 		</ul>
     </nav>
   
-    <div class="contaner1">
+    
     <h1 class="text-center">Listado Reservaciones</h1>
     <button type="button" class="btn btn-info " data-toggle="modal" onclick="location.href='../vistas/AgregarDocente.php'">
 Docentes

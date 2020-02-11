@@ -33,7 +33,7 @@ die();
 			</li>
 
 			<li>
-				<a href="./asistencia.html">
+				<a href="./vistas/AgregarAsis.php">
 					<img src="img/us.jpg" alt="" class="imagen">
 					<span class="text-item">Asistencia</span>
 					<span class="down-item"></span>

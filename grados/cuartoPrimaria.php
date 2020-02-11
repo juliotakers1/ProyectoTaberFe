@@ -78,7 +78,7 @@
 		</ul>
     </nav>
   
-    <div class="contaner1">
+    <div class="container">
     <h1 class="text-center">Listado Alumnos</h1>
     <button type="button" class="btn btn-info" data-toggle="modal" onclick="location.href='../vistas/AgregarAlumno.php'">
 Parvúlos Primaria

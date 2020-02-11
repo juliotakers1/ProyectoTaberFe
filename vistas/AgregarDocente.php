@@ -16,6 +16,7 @@
 
     
 </head>
+<div class="container">
 <body onload="lista_libros('');">
 
 <section class="title mx-10">
@@ -285,5 +286,6 @@ $('.deletebtn').on('click',function () {
   
 });
 </script>
+</div>
 </body>
 </html>

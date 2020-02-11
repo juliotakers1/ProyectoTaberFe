@@ -17,7 +17,7 @@
     
 </head>
 <body onload="lista_libros('');">
-
+<div class="container">
 <section class="title mx-10">
 		<!--<h1 class="">Colegio Cristiano Tabernáculo de la Fe</h1>-->
 	</section>
@@ -284,5 +284,6 @@ $('.deletebtn').on('click',function () {
   
 });
 </script>
+</div>
 </body>
 </html>
