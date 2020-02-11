@@ -228,11 +228,11 @@ Eliminar
     
     </tr>
     </thead>
-   
+    <?php $fcha = date("Y-m-d");?>
    <script type="text/javascript" src="index.js"></script>
    <?php
     include_once("../includes/conexion.php");
-
+    $hoy =getdate();
     
     //SELECT * FROM tabla ORDER BY columna para seleccionar por columna
     
@@ -248,16 +248,20 @@ Eliminar
         
       
 	<tr>
-	<td><input type="date" name="fecha" id="fecha"></td>
+	<td><input type="date" name="fecha" id="fecha" value="'.$fcha.'"></td>
 	<td ><select name="estudiante" id="estudiante">
   <option value="'.$fila['CODIGO_ESTUDIANTE'].'">'.$fila['NOMBRE_ESTUDIANTE'].' '.$fila['APELLIDO_ESTUDIANTE'].'</option>
   </select>  </td>
 
-    <td  > <select name="grado" id="grado" >
+    <td  > <select name="grado" id="grado[]" >
     <option value="'.$fila['CODIGO_GRADO'].'">'.$fila['NOMBRE_GRADO'].'</option>
     </select>
    </td>
-    <td><input type="checkbox" name="asistencia" value="si"></td>
+   
+    <td><label for="">SI</label>
+    <input type="checkbox" name="asistencia" value="si">
+    </td>
+    
     
    
     </tr> 
