@@ -75,9 +75,10 @@
 				</a>
 			</li>
 
-		</ul>
-    </nav>
+    </ul>
   
+    </nav>
+  <br>
 	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#insertar">
 Nuevo Usuario
 </button>
