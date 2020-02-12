@@ -139,12 +139,12 @@ Ingresar Asistencia
     <table class="table table-striped">
     <thead>
     <tr>
-    <th scope="col">Fecha</th>
-    <th scope="col">Nombre Estudiante</th>
+    <th scope="col" for="">Fecha</th>
+    <th scope="col" for="">Nombre Estudiante</th>
     
-    <th scope="col">Apellido Estudiante</th>
-	<th scope="col">Grado</th>
-	<th scope="col">Asistencia</th>
+    <th scope="col" for="">Apellido Estudiante</th>
+	<th scope="col" for="">Grado</th>
+	<th scope="col"for="">Asistencia</th>
 
     <th scope="col">Eliminar</th>
     
@@ -197,6 +197,7 @@ Eliminar
       
     
   
+<?php for($i=1; $i <= 3; $i++){?>
 
     <!-- Modal insertar -->
 <div class="modal fade" id="insertar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -213,17 +214,17 @@ Eliminar
 
            <!--formulario-->
 
-           <form action="registrarAs.php" method="POST">
+           <form action="registrarAs.php" method="POST" id="form_insert">
         <div class="form-group">
         <table class="table table-striped">
     <thead>
     <tr>
-    <th scope="col">Fecha</th>
-    <th scope="col">Nombre Estudiante</th>
+    <th scope="col" for="">Fecha</th>
+    <th scope="col" for="">Nombre Estudiante</th>
     
    
-	<th scope="col">Grado</th>
-	<th scope="col">Asistencia</th>
+	<th scope="col" for="">Grado</th>
+	<th scope="col" for="">Asistencia</th>
 	
     
     </tr>
@@ -249,17 +250,17 @@ Eliminar
       
 	<tr>
 	<td><input type="date" name="fecha" id="fecha" value="'.$fcha.'"></td>
-	<td ><select name="estudiante" id="estudiante">
+	<td ><select required name="estudiante[]" id="estudiante[]">
   <option value="'.$fila['CODIGO_ESTUDIANTE'].'">'.$fila['NOMBRE_ESTUDIANTE'].' '.$fila['APELLIDO_ESTUDIANTE'].'</option>
   </select>  </td>
 
-    <td  > <select name="grado" id="grado[]" >
+    <td  > <select required name="grado[]" id="grado[]" >
     <option value="'.$fila['CODIGO_GRADO'].'">'.$fila['NOMBRE_GRADO'].'</option>
     </select>
    </td>
    
     <td><label for="">SI</label>
-    <input type="checkbox" name="asistencia" value="si">
+    <input type="checkbox"  required name="asistencia[]" value="si">
     </td>
     
     
@@ -276,9 +277,13 @@ Eliminar
     </table>
         
         </form>
+      
         <div class="modal-footer">
+        
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
         <button type="submit" class="btn btn-primary">Guardar</button>
+        <?php } ?>
         </div>
         </div>
       </div>
