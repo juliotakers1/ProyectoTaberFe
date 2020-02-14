@@ -197,7 +197,7 @@ Eliminar
       
     
   
-<?php for($i=1; $i <= 3; $i++){?>
+
 
     <!-- Modal insertar -->
 <div class="modal fade" id="insertar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -215,16 +215,17 @@ Eliminar
            <!--formulario-->
 
            <form action="registrarAs.php" method="POST" id="form_insert">
+   <?php for($i=1; $i <= 3; $i++){?>
         <div class="form-group">
         <table class="table table-striped">
     <thead>
     <tr>
-    <th scope="col" for="">Fecha</th>
-    <th scope="col" for="">Nombre Estudiante</th>
+    <th scope="col" >Fecha</th>
+    <th scope="col" >Nombre Estudiante</th>
     
    
-	<th scope="col" for="">Grado</th>
-	<th scope="col" for="">Asistencia</th>
+	<th scope="col" >Grado</th>
+	<th scope="col" >Asistencia</th>
 	
     
     </tr>
@@ -275,7 +276,7 @@ Eliminar
  
     
     </table>
-        
+    <?php } ?>
         </form>
       
         <div class="modal-footer">
@@ -283,7 +284,7 @@ Eliminar
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 
         <button type="submit" class="btn btn-primary">Guardar</button>
-        <?php } ?>
+        
         </div>
         </div>
       </div>

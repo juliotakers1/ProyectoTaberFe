@@ -8,12 +8,20 @@ $asistencia=$_POST["asistencia"];
 
 
 
-$sentencia=$base_de_datos->prepare("INSERT INTO asistencia(fecha, CODIGO_ESTUDIANTE, CODIGO_GRADO, ASISTENCIA)VALUES ");
+$cadena="INSERT INTO asistencia(fecha, CODIGO_ESTUDIANTE, CODIGO_GRADO, ASISTENCIA)VALUES ";
 
 
-for ($i=0; $i < count($fecha); $i++) { 
-   $sentencia.="('" .$fecha[$i]."', '".$estudiante[$i]."', '".$grado[$i]."', '".$asistencia[$i]."')";
+for ($i=0; $i < count($estudiante); $i++) { 
+   $cadena.="('" .$fecha[$i]."', '".$estudiante[$i]."', '".$grado[$i]."', '".$asistencia[$i]."')";
 }
-echo json_encode(array('sentencia' =>$sentencia));
+
+$cadena_final = substr($cadena, 0, -1);
+$cadena_final.=";";
+
+if($base_de_datos->query($cadena_final)):
+   echo json_encode(array('error' => false));
+else:
+   echo json_encode(array('error' => true));
+endif;
 
 ?>

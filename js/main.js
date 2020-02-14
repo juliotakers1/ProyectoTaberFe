@@ -7,10 +7,15 @@ jQuery.ajax({
     data: $(this).serialize(),
 })
 .done(function(respuesta){
-    console.log("success");
+    console.log("respuesta");
+    if (!respuesta.error) {
+        alert('bien hecho');
+    } else {
+        alert('mal hecho');
+    }
 })
 .fail(function(resp){
-    console.log("error");
+    console.log(resp.responseText);
 })
 .always(function(){
     console.log("complete");
