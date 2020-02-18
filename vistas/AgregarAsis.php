@@ -215,7 +215,7 @@ Eliminar
            <!--formulario-->
 
            <form action="registrarAs.php" method="POST" id="form_insert">
-   <?php for($i=1; $i <= 3; $i++){?>
+  
         <div class="form-group">
         <table class="table table-striped">
     <thead>
@@ -276,7 +276,7 @@ Eliminar
  
     
     </table>
-    <?php } ?>
+  
         </form>
       
         <div class="modal-footer">
