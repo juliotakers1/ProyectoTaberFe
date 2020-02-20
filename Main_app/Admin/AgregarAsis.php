@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../logo.png" />
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -35,8 +35,8 @@
 			</li>-->
 
 			<li>
-				<a href="./AgregarAsistencia.php">
-					<img src="../img/us.jpg" alt="" class="imagen">
+				<a href="AgregarAsistencia.php">
+					<img src="img/us.jpg" alt="" class="imagen">
 					<span class="text-item">Asistencia</span>
 					<span class="down-item"></span>
 				</a>
@@ -44,8 +44,8 @@
 
 			<li>
                     
-				<a href="./AgregarReserva.php">
-					<img src="../img/servicios.jpg" alt="" class="imagen">
+				<a href="AgregarReserva.php">
+					<img src="img/servicios.jpg" alt="" class="imagen">
 					<span class="text-item">Reservación</span>
                     <span class="down-item"></span>
                    
@@ -54,22 +54,22 @@
            
 			<li>
 				<a href="AgregarAlumno.php">
-					<img src="../img/blog.jpg" alt="" class="imagen">
+					<img src="img/blog.jpg" alt="" class="imagen">
 					<span class="text-item">Alumnos</span>
 					<span class="down-item"></span>
 				</a>
 			</li>
 
 			<li>
-				<a href="../vistas/AgregarUsuario.php">
-					<img src="../img/web.jpg" alt="" class="imagen">
+				<a href="AgregarUsuario.php">
+					<img src="img/web.jpg" alt="" class="imagen">
 					<span class="text-item">Usuarios</span>
 					<span class="down-item"></span>
 				</a>
 			</li>
 
 			<li>
-				<a href="../includes/logout.php">
+				<a href="includes/logout.php">
 					<img src="../img/salirr.jpg" alt="" class="imagen">
 					<span class="text-item">Salir</span>
 					<span class="down-item"></span>
