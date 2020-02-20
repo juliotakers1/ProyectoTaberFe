@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,41 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./logo.png" />
-    <title>Home</title>
-	<link rel="stylesheet" href="./css/estilos1.css">
-	
-	
-	<?php
+    <title>Administrador</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 
-
-$usuario = $_SESSION['user'];
-
-if(!isset($usuario)){
-	header("Location: Login.php");
-}else{
-	
-}
-	?>
 </head>
 <body>
-	<img src="../img/hogar.png" alt="">
 <section class="title mx-10">
 		<!--<h1 class="">Colegio Cristiano Tabernáculo de la Fe</h1>-->
 	</section>
 	<nav class="navegacion">
+<?php 
+	if($_SESSION['user']== null ){
+	header('Location: index.php');
 
+die();
+	}
+		?>
 		<ul class="menu">
 
-			<!--<li class="first-item">
-				<a href="./home.php">
-					<img src="img/home.jpg" alt="" class="imagen">
-					<span class="text-item">Inicio</span>
-					<span class="down-item"></span>
-                </a>
-               
-			</li>-->
 
-			<li>
+		<li>
 				<a href="./vistas/AgregarAsis.php">
 					<img src="img/us.jpg" alt="" class="imagen">
 					<span class="text-item">Asistencia</span>
@@ -66,13 +50,7 @@ if(!isset($usuario)){
 				</a>
 			</li>
 
-			<li>
-				<a href="./vistas/AgregarUsuario.php">
-					<img src="img/web.jpg" alt="" class="imagen">
-					<span class="text-item">Usuarios</span>	
-					<span class="down-item"></span>
-				</a>
-			</li>
+			
 
 			<li>
 				<a href="./includes/logout.php">
@@ -84,11 +62,6 @@ if(!isset($usuario)){
 
 		</ul>
     </nav>
-  
- 
-	<script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
-
-  <section class="login-box"></section>
-  <i class="fab fa-facebook-square"></i>
+    
 </body>
 </html>

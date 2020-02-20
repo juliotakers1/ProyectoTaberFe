@@ -1,36 +1,23 @@
-<?php
-include_once 'includes/user.php';
-include_once 'includes/user_session.php';
-
-$userSession = new UserSession();
-$user = new User();
-
-if(isset($_SESSION['user'])){
-    //echo "hay sesion";
-    $user->setUser($userSession->getCurrentUser());
-    include_once 'vistas/home.php';
-
-}else if(isset($_POST['username']) && isset($_POST['password'])){
-    
-    $userForm = $_POST['username'];
-    $passForm = $_POST['password'];
-
-    $user = new User();
-    if($user->userExists($userForm, $passForm)){
-        //echo "Existe el usuario";
-        $userSession->setCurrentUser($userForm);
-        $user->setUser($userForm);
-       
-        include_once 'vistas/home.php';
-    }else{
-        //echo "No existe el usuario";
-        $errorLogin = "Nombre de usuario y/o password incorrecto";
-        include_once 'vistas/login.php';
-    }
-}else{
-    //echo "login";
-    include_once 'vistas/login.php';
-}
-
-
-?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="error">
+      <span>Datos de ingreso no válidos, inténtelo de nuevo  por favor</span>
+    </div>
+    <div class="main">
+    <img src="img/logo.png" class="avatar" alt="Avatar Image">
+     <form action="" id="formLg">
+        <input type="text" name="usuariolg"  placeholder="Usuario" required>
+        <input type="password" name="passlg"  placeholder="Contraseña" required>
+        <input type="submit" class="botonlg"  value="Iniciar Sesión" >
+     </form>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
