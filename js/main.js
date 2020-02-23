@@ -2,7 +2,7 @@
 jQuery(document).on('submit','#formLg',function(event){
             event.preventDefault();
             jQuery.ajax({
-                url:'main_app/login.php',
+                url:'login.php',
                 type:'POST',
                 dataType:'json',
                 data:$(this).serialize(),
@@ -14,9 +14,9 @@ jQuery(document).on('submit','#formLg',function(event){
                 console.log(respuesta);
                 if (!respuesta.error) {
                   if (respuesta.tipo=='Admin') {
-                    location='main_app/Admin/home.php';
+                    location='Admin/home.php';
                   }else if (respuesta.tipo=='Usuario') {
-                    location='main_app/Usuario/home1.php';
+                    location='Usuario/home1.php';
                   }
                 }else {
                   $('.error').slideDown('slow');

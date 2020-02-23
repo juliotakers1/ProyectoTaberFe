@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="../img/logo.png" />
+	<link rel="stylesheet" href="../css/estilos1.css">
+    <link rel="shortcut icon" href="./logo.png" />
     <title>Home</title>
-	<link rel="stylesheet" href=".../css/estilos1.css">
+	
 </head>
 <body>
-	<img src="../img/hogar.png" alt="">
+	<!--<img src="../img/hogar.png" alt="">-->
+<div class="container">
+
 <section class="title mx-10">
 		<!--<h1 class="">Colegio Cristiano Tabernáculo de la Fe</h1>-->
 	</section>
@@ -29,7 +32,7 @@
 
 			<li>
 				<a href="AgregarAsis.php">
-					<img src="../img/us.jpg" alt="" class="imagen">
+					<img src="../img/us.jpg" alt="no da" class="imagen">
 					<span class="text-item">Asistencia</span>
 					<span class="down-item"></span>
 				</a>
@@ -71,11 +74,12 @@
 
 		</ul>
     </nav>
-  <!--arreglar que no se mira ni verga xDD
--->
- 
-	
-  <section class="login-box"></section>
   
+ 
+	<script>alert('Bienvenid@ <?php echo  $user->getNombre();?>')</script>
+
+  <section class="login-box"></section>
+  <i class="fab fa-facebook-square"></i>
+  </div>
 </body>
 </html>

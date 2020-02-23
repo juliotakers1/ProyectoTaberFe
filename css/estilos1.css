@@ -25,11 +25,7 @@ body{
 
 }
 	
-.container{
-	-webkit-box-shadow: -1px 3px 28px -4px rgba(0,0,0,1);
--moz-box-shadow: -1px 3px 28px -4px rgba(0,0,0,1);
-box-shadow: -1px 3px 28px -4px rgba(0,0,0,1);
-}	 
+	 
 img{
 	max-width: 70%;
 }
@@ -37,7 +33,7 @@ img{
 
 .title{
 	background-image: url(../img/portada1.png);
-	width: 1110px;
+	width: 1366px;
 	margin-top: 0;
 	height: 170px;
 

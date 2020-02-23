@@ -60,7 +60,7 @@
 			</li>
 
 			<li>
-				<a href="../vistas/AgregarUsuario.php">
+				<a href="AgregarUsuario.php">
 					<img src="../img/web.jpg" alt="" class="imagen">
 					<span class="text-item">Usuarios</span>
 					<span class="down-item"></span>
